@@ -27,6 +27,7 @@
             <td>{{ $result['score'] }}</td>
             <td>
               <a href="{{ route('questionnaire.result', $result['id']) }}" target="_blank" class="btn btn-sm btn-primary">View</a>
+              <a href="{{ route('courses.details.index', $courseDetail->id) }}" class="btn btn-sm btn-secondary">Back</a>
             </td>
           </tr>
           @endforeach
